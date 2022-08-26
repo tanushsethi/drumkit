@@ -20,6 +20,9 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 50px;
 }
 
 #overlay{
@@ -55,15 +58,42 @@
     transform: scale(1.1); 
 } */
 
+/* #insBox1{
+    height: 100px;
+    width: 100px;
+    top : 100px;
+    left: 80px;
+}
+
+#insBox2{
+    height: 200px;
+    width: 200px;
+    top : -60px;
+    left: 0px;
+}
+
+#insBox3{
+    height: 340px;
+    width: 340px;
+    top : 100px;
+    left: -0px;
+} */
 
 .letter{
     font-size: 20px;
-    color: aliceblue;
-    font-family: play-fair;
+    color: rgba(240, 248, 255, 0.399);
+    /* font-family: play-fair; */
+    margin-bottom: 5px;
+    position: absolute;
+    font-size: 70px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
 }
 
 .name{
     color: yellow;
     text-transform: uppercase;
     font-size: 12px;
+    position: relative;
 }
