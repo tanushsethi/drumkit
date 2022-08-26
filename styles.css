@@ -12,25 +12,46 @@
 #wrapper{
     height: 100vh;
     width: 100%;
-    background-image: url("https://images.pexels.com/photos/1061623/pexels-photo-1061623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-image: url("https://images.pexels.com/photos/11018964/pexels-photo-11018964.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+#overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(155, 155, 155, 0.426);
+    z-index: 0;
 }
 
 .insBox{
     height: 70px;
-    width: 80px;
-    margin: 20px;
+    min-width: 70px;
+    width: auto;
+    user-select: none;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.333);
+    background-color: rgba(0, 0, 0, 0.492);
     border: 3px solid black;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.insBox:hover{
+    border: 3px solid yellow;
+    transform: scale(1.1); 
 }
 
 
@@ -42,4 +63,6 @@
 
 .name{
     color: yellow;
+    text-transform: uppercase;
+    font-size: 12px;
 }
